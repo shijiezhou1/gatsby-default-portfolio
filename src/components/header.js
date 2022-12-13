@@ -1,5 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
+import getFastImage from "../utility"
 
 const Header = ({ siteTitle }) => (
   <header
@@ -14,7 +15,7 @@ const Header = ({ siteTitle }) => (
     <Link
       to="/"
       style={{
-        fontSize: `var(--font-sm)`,
+        fontSize: `var(--font-lg)`,
         textDecoration: `none`,
       }}
     >
@@ -22,9 +23,9 @@ const Header = ({ siteTitle }) => (
     </Link>
     <img
       alt="Shijie Zhou logo"
-      height={20}
+      height={40}
       style={{ margin: 0 }}
-      src="https://cdn.jsdelivr.net/gh/shijiezhou1/Artemis@master/img/logo-text.png"
+      src={getFastImage("logo-text.png")}
     />
   </header>
 )
