@@ -19,8 +19,8 @@ const Upload = () => {
         setListImg(a);
     }
 
-    useEffect(async () => {
-        await refreshImages();
+    useEffect(() => {
+        refreshImages();
     }, [])
 
     const uploadFile = (file) => {
@@ -152,16 +152,11 @@ const Upload = () => {
                                 }}
                             />
                             <div>{r.name}</div>
-                            {/* <div>
-                            <div>Edit</div>
-                            <div>Delete</div>
-                        </div> */}
                         </div>
                     )}
                 </div>
 
                 <button className="" onClick={() => submit()}>SUBMIT</button>
-
             </div>
 
 

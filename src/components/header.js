@@ -1,5 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
+import { imgMapping } from "../config/image"
 
 const Header = ({ siteTitle }) => (
   <header
@@ -24,7 +25,7 @@ const Header = ({ siteTitle }) => (
       alt="Shijie Zhou logo"
       height={40}
       style={{ margin: 0 }}
-      src={("logo-text.png")}
+      src={imgMapping["logo-text.png"]}
     />
   </header>
 )
