@@ -1,6 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+import { MainImage, StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -45,6 +45,9 @@ const samplePageLinks = [
   { text: "Server Side Rendering", url: "using-ssr" },
   { text: "Deferred Static Generation", url: "using-dsg" },
   { text: "Upload center", url: "upload" },
+  { text: "About", url: "about" },
+  { text: "Contact", url: "contact" },
+  { text: "CV", url: "cv" }
 ]
 
 const moreLinks = [
@@ -73,28 +76,15 @@ const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=de
 const IndexPage = () => (
   <Layout>
     <div className={styles.textCenter}>
-      <StaticImage
-        src="../images/logo.png"
-        loading="eager"
-        width={64}
-        quality={95}
-        formats={["auto", "webp", "avif"]}
-        alt=""
-        style={{ marginBottom: `var(--space-3)` }}
-      />
-      <h1>
-        Welcome to <b>SHIJIE ZHOU!</b>
-      </h1>
+      <img src="https://gist.githubusercontent.com/shijiezhou1/8ec733adee53b8bf6ef78d9aa42b9dff/raw/1301e206e342d4ac9801a21260b5bd98e4d228d0/ABOUTME.gif" style={{ marginBottom: `var(--space-3)`, width: `100%` }} />
       <p className={styles.intro}>
-        <b>Home pages:</b>{" "}
+        <b>Navigation: </b>{" "}
         {samplePageLinks.map((link, i) => (
           <React.Fragment key={link.url}>
             <Link to={link.url}>{link.text}</Link>
             {i !== samplePageLinks.length - 1 && <> · </>}
           </React.Fragment>
         ))}
-        <br />
-        Edit <code>src/pages/index.js</code> to update this page.
       </p>
     </div>
     <ul className={styles.list}>

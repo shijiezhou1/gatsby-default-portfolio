@@ -167,6 +167,6 @@ const Upload = () => {
     )
 }
 
-export const Head = () => <Seo title="Upload | SHIJIE ZHOU" />
+export const Head = () => <Seo title="Upload" />
 
 export default Upload;

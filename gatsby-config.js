@@ -9,10 +9,16 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Shijie Zhou`,
-    description: `Thow the ssr feature`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    homePage: {
+      title: `SHIJIE ZHOU`,
+      description: `Shijie Zhou studies at University of California, San Diego in the Interdisciplinary Computer in Arts. He is also the member for design and construct web developer at the Worldview Project organization. Currently, he is working in Code 9, Pte Ltd software engineer. He obtains Associate degree in Green River College, and also finish the B.A. degree at UCSD. He gained experience in media use and computer art. He also familiar with web design and customize selling pages on ebay which promote stuffs at leisure time.
+
+      Read more: http://www.shijiezhou.com/#ixzz7nUzsqbg6`,
+      author: `@shijiezhou`,
+      siteUrl: `https://portfolio.shijiezhou.com/`,
+      redirectTo: '/',
+      menu: 'Home',
+    }
   },
   plugins: [
     `gatsby-plugin-image`,

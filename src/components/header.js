@@ -21,12 +21,16 @@ const Header = ({ siteTitle }) => (
     >
       {siteTitle}
     </Link>
-    <img
-      alt="Shijie Zhou logo"
-      height={40}
-      style={{ margin: 0 }}
-      src={imgMapping["logo-text.png"]}
-    />
+    <Link
+      to="/"
+    >
+      <img
+        alt="Shijie Zhou logo"
+        height={40}
+        style={{ margin: 0 }}
+        src={imgMapping["logo-text.png"]}
+      />
+    </Link>
   </header>
 )
 

@@ -16,6 +16,6 @@ const Medium = () => (
   </Layout>
 )
 
-export const Head = () => <Seo title="Medium | SHIJIE ZHOU" />
+export const Head = () => <Seo title="Medium" />
 
 export default Medium
