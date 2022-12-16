@@ -4,13 +4,14 @@
   /* https://css-tricks.com/responsive-layouts-fewer-media-queries/ */
   --w: 280px;
   --n: 2;
-  gap: var(--size-gap);
+  /* gap: var(--size-gap); */
+  gap: var(--space-2);
   grid-template-columns: repeat(
     auto-fit,
     minmax(max(var(--w), 100%/ (var(--n) + 1) + 0.1%), 1fr)
   );
   margin-bottom: var(--size-gap);
-  margin-top: var(--size-gap);
+  /* margin-top: var(--size-gap); */
 }
 
 .listItem {
@@ -52,3 +53,37 @@
   max-width: none;
   line-height: var(--line-height-loose);
 }
+
+.linkContainer {
+  display: flex;
+  margin: var(--space-1) 0;
+  justify-content: space-between;
+  background: linear-gradient(140deg, #2196f3, rgb(46 41 51 / 8%));
+  padding: var(--space-2);
+  border-radius: var(--space-2);
+  cursor: pointer;
+}
+
+.linkContainer:hover {
+
+}
+
+.linkImage {
+  height: var(--space-7);
+}
+
+.linkImage img {
+  height: inherit;
+}
+
+.linkDescription {
+  width: 50%;
+  margin-right: var(--space-4);
+}
+
+.linkDescription p {
+  font-weight: bold;
+}
+
+
+https://user-images.githubusercontent.com/28111591/207770970-8728a8e7-3b30-41ac-8705-b953e8df4ad4.jpg
