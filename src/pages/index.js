@@ -2,7 +2,6 @@ import React, { useCallback } from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import { links } from "../config/links"
-import {useNavigate} from 'react-router-dom';
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
