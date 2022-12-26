@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 
 const Project = (props) => {
-    const { description, text, html } = props.location.state;
+    const { text, html } = props.location.state;
     return (
         <Layout>
           <h1>{text}:</h1>

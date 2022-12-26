@@ -1,4 +1,4 @@
-import React, { useCallback } from "react"
+import React from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import { links } from "../config/links"
